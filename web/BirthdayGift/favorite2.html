@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>喜欢</title>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+        }
+        .timeline{
+            width: 100%;
+            height: 3300px;
+            margin: 0px;
+            list-style-type: none;
+            padding: 0px;
+        }
+        .timeline>.l0{
+            width: 100%;
+            height: 300px;
+            margin: 0px;
+            padding: 0px;
+            background-image: url("yt1.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .timeline>.l0>.time{
+            padding-top: 10px;
+            padding-left: 10px;
+            color: darkblue;
+            width: 80px;
+            position: absolute;
+        }
+        .timeline>.l0>.location{
+            position: absolute;
+            width: 90px;
+            padding-left: 50px;
+            padding-top: 30px;
+            color: blue;
+            font-family: 华文行楷;
+            font-size: 40px;
+        }
+        .timeline>.l0>.content{
+            margin-left: 150px;
+            height: 100%;
+        }
+        .timeline>.l0>.content>.txt{
+            writing-mode:vertical-lr;
+            padding-top: 4px;
+            color: darkblue;
+            font-family: 华文新魏;
+        }
+        .timeline>.l1{
+            width: 100%;
+            height: 300px;
+            margin: 0px;
+            padding: 0px;
+            background-image: url("ts.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .timeline>.l1>.time{
+            padding-top: 10px;
+            padding-left: 10px;
+            color: lightgreen;
+            width: 80px;
+            position: absolute;
+        }
+        .timeline>.l1>.location{
+            position: absolute;
+            width: 90px;
+            padding-left: 50px;
+            padding-top: 30px;
+            color: olive;
+            font-family: 华文行楷;
+            font-size: 40px;
+        }
+        .timeline>.l1>.content{
+            margin-left: 150px;
+            height: 100%;
+        }
+        .timeline>.l1>.content>.txt{
+            writing-mode:vertical-lr;
+            padding-top: 4px;
+            color: darkgreen;
+            font-family: 华文新魏;
+        }
+        .timeline>.l2{
+            width: 100%;
+            height: 300px;
+            margin: 0px;
+            padding: 0px;
+            background-image: url("hb.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .timeline>.l2>.time{
+            padding-top: 10px;
+            padding-left: 10px;
+            color: blueviolet;
+            width: 80px;
+            position: absolute;
+        }
+        .timeline>.l2>.location{
+            position: absolute;
+            width: 90px;
+            padding-left: 50px;
+            padding-top: 30px;
+            color: darkblue;
+            font-family: 华文行楷;
+            font-size: 20px;
+        }
+        .timeline>.l2>.content{
+            margin-left: 150px;
+            height: 100%;
+        }
+        .timeline>.l2>.content>.txt{
+            writing-mode:vertical-lr;
+            padding-top: 15px;
+            color: blue;
+            font-family: 华文新魏;
+        }
+        .timeline>.l3{
+            width: 100%;
+            height: 300px;
+            margin: 0px;
+            padding: 0px;
+            background-image: url("lk.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .timeline>.l3>.time{
+            padding-top: 10px;
+            padding-left: 10px;
+            color: slategray;
+            width: 80px;
+            position: absolute;
+        }
+        .timeline>.l3>.location{
+            position: absolute;
+            width: 90px;
+            padding-left: 50px;
+            padding-top: 30px;
+            color: grey;
+            font-family: 华文行楷;
+            font-size: 20px;
+        }
+        .timeline>.l3>.content{
+            margin-left: 150px;
+            height: 100%;
+        }
+        .timeline>.l3>.content>.txt{
+            writing-mode:vertical-lr;
+            padding-top: 15px;
+            color: darkslategray;
+            font-family: 华文新魏;
+        }
+        .timeline>.l4{
+            width: 100%;
+            height: 300px;
+            margin: 0px;
+            padding: 0px;
+            background-image: url("rz.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .timeline>.l4>.time{
+            padding-top: 10px;
+            padding-left: 10px;
+            color: red;
+            width: 80px;
+            position: absolute;
+        }
+        .timeline>.l4>.location{
+            position: absolute;
+            width: 90px;
+            padding-left: 50px;
+            padding-top: 30px;
+            color: indianred;
+            font-family: 华文行楷;
+            font-size: 30px;
+        }
+        .timeline>.l4>.content{
+            margin-left: 150px;
+            height: 100%;
+        }
+        .timeline>.l4>.content>.txt{
+            writing-mode:vertical-lr;
+            padding-top: 15px;
+            color: darkred;
+            font-family: 华文新魏;
+        }
+        .timeline>.l5{
+            width: 100%;
+            height: 300px;
+            margin: 0px;
+            padding: 0px;
+            background-image: url("hb1.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .timeline>.l5>.time{
+            padding-top: 10px;
+            padding-left: 10px;
+            color: yellowgreen;
+            width: 80px;
+            position: absolute;
+        }
+        .timeline>.l5>.location{
+            position: absolute;
+            width: 90px;
+            padding-left: 50px;
+            padding-top: 30px;
+            color: yellow;
+            font-family: 华文行楷;
+            font-size: 20px;
+        }
+        .timeline>.l5>.content{
+            margin-left: 150px;
+            height: 100%;
+        }
+        .timeline>.l5>.content>.txt{
+            writing-mode:vertical-lr;
+            padding-top: 15px;
+            color: greenyellow;
+            font-family: 华文新魏;
+        }
+        .timeline>.l6{
+            width: 100%;
+            height: 300px;
+            margin: 0px;
+            padding: 0px;
+            background-image: url("ns.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .timeline>.l6>.time{
+            padding-top: 10px;
+            padding-left: 10px;
+            color: white;
+            width: 80px;
+            position: absolute;
+        }
+        .timeline>.l6>.location{
+            position: absolute;
+            width: 90px;
+            padding-left: 50px;
+            padding-top: 30px;
+            color: wheat;
+            font-family: 华文行楷;
+            font-size: 40px;
+        }
+        .timeline>.l6>.content{
+            margin-left: 150px;
+            height: 100%;
+        }
+        .timeline>.l6>.content>.txt{
+            writing-mode:vertical-lr;
+            padding-top: 4px;
+            color: whitesmoke;
+            font-family: 华文新魏;
+        }
+        .timeline>.l7{
+            width: 100%;
+            height: 300px;
+            margin: 0px;
+            padding: 0px;
+            background-image: url("ymd.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .timeline>.l7>.time{
+            padding-top: 10px;
+            padding-left: 10px;
+            color: yellow;
+            width: 80px;
+            position: absolute;
+        }
+        .timeline>.l7>.location{
+            position: absolute;
+            width: 90px;
+            padding-left: 50px;
+            padding-top: 30px;
+            color: yellowgreen;
+            font-family: 华文行楷;
+            font-size: 30px;
+        }
+        .timeline>.l7>.content{
+            margin-left: 150px;
+            height: 100%;
+        }
+        .timeline>.l7>.content>.txt{
+            writing-mode:vertical-lr;
+            padding-top: 4px;
+            color: lightgoldenrodyellow;
+            font-family: 华文新魏;
+        }
+        .timeline>.l8{
+            width: 100%;
+            height: 300px;
+            margin: 0px;
+            padding: 0px;
+            background-image: url("zy.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .timeline>.l8>.time{
+            padding-top: 10px;
+            padding-left: 10px;
+            color: #9cb446;
+            width: 80px;
+            position: absolute;
+        }
+        .timeline>.l8>.location{
+            position: absolute;
+            width: 90px;
+            padding-left: 50px;
+            padding-top: 30px;
+            color: #a9b429;
+            font-family: 华文行楷;
+            font-size: 40px;
+        }
+        .timeline>.l8>.content{
+            margin-left: 120px;
+            height: 100%;
+        }
+        .timeline>.l8>.content>.txt{
+            writing-mode:vertical-lr;
+            padding-top: 4px;
+            color: blue;
+            font-family: 华文新魏;
+        }
+        .timeline>.l9{
+             width: 100%;
+             height: 300px;
+             margin: 0px;
+             padding: 0px;
+             background-image: url("mls.jpg");
+             background-size: 100% 100%;
+             background-repeat: no-repeat;
+             position: relative;
+         }
+        .timeline>.l9>.time{
+            padding-top: 10px;
+            padding-left: 10px;
+            color: pink;
+            width: 80px;
+            position: absolute;
+        }
+        .timeline>.l9>.location{
+            position: absolute;
+            width: 90px;
+            padding-left: 50px;
+            padding-top: 30px;
+            color: lightpink;
+            font-family: 华文行楷;
+            font-size: 30px;
+        }
+        .timeline>.l9>.content{
+            margin-left: 120px;
+            height: 100%;
+        }
+        .timeline>.l9>.content>.txt{
+            writing-mode:vertical-lr;
+            padding-top: 4px;
+            color: yellow;
+            font-family: 华文新魏;
+        }
+        .timeline>.l10{
+            width: 100%;
+            height: 300px;
+            margin: 0px;
+            padding: 0px;
+            background-image: url("kq.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .timeline>.l10>.time{
+            padding-top: 10px;
+            padding-left: 10px;
+            color: pink;
+            width: 80px;
+            position: absolute;
+        }
+        .timeline>.l10>.location{
+            position: absolute;
+            width: 90px;
+            padding-left: 50px;
+            padding-top: 30px;
+            color: lightpink;
+            font-family: 华文行楷;
+            font-size: 40px;
+        }
+        .timeline>.l10>.content{
+            margin-left: 150px;
+            height: 100%;
+        }
+        .timeline>.l10>.content>.txt{
+            writing-mode:vertical-lr;
+            padding-top: 4px;
+            color: yellow;
+            font-family: 华文新魏;
+        }
+        .timeline>.l11{
+            width: 100%;
+            height: 300px;
+            margin: 0px;
+            padding: 0px;
+            background-image: url("wwdx.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .timeline>.l11>.time{
+            padding-top: 10px;
+            padding-left: 10px;
+            color: pink;
+            width: 80px;
+            position: absolute;
+        }
+        .timeline>.l11>.location{
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            padding-left: 0px;
+            padding-top: 90px;
+            color: lightpink;
+            font-family: 华文行楷;
+            font-size: 40px;
+        }
+        .timeline>.l11>.content{
+            margin-left: 150px;
+            height: 100%;
+        }
+        .timeline>.l11>.content>.txt{
+            writing-mode:vertical-lr;
+            padding-top: 4px;
+            color: yellow;
+            font-family: 华文新魏;
+        }
+  </style>
+</head>
+<body>
+<ul class="timeline">
+    <li class="l6">
+        <div class="time">2019-01-15</div>
+        <div class="location">南山</div>
+        <div class="content">
+            <div class="txt">
+                <p>忘了这天是不是逃了带队</p>
+                <p>那天很冷,和你去逛了博商</p>
+                <p>把我的初吻献给了你</p>
+                <p>感觉真的很棒</p>
+                <p>可是，之后你就伸了舌头</p>
+                <p>拜托以后不要伸舌头</p>
+            </div>
+        </div>
+    </li>
+    <li class="l5">
+        <div class="time">2019-01-18</div>
+        <div class="location">东海海边</div>
+        <div class="content">
+            <div class="txt">
+                <p>这是我们第一次去海边</p>
+                <p>你在南山，大早上坐车来找我</p>
+                <p>车上还遇到了李传伟</p>
+                <p>海边还有队员开视频</p>
+                <p>很尴尬、很担心又很幸福</p>
+            </div>
+        </div>
+    </li>
+    <li class="l0">
+        <div class="time">2019-02-24</div>
+        <div class="location">烟台</div>
+        <div class="content">
+            <div class="txt">
+                <p>还记得我们第一次相约烟台</p>
+                <p>那时青涩，彼此羞涩</p>
+                <p>第一次去爬烟台山</p>
+                <p>你很讨厌这</p>
+                <p>丢了第一个戒指</p>
+            </div>
+        </div>
+    </li>
+    <li class="l4">
+        <div class="time">2019-04-05</div>
+        <div class="location">日租房</div>
+        <div class="content">
+            <div class="txt">
+                <p>第一次一起过清明节</p>
+                <p>第一次给彼此做饭</p>
+                <p>这天彰显了我的胃口</p>
+                <p>突出了你的厨艺</p>
+                <p>尽管我表面不恭维</p>
+            </div>
+        </div>
+    </li>
+    <li class="l7">
+        <div class="time">2019-05-04</div>
+        <div class="location">养马岛</div>
+        <div class="content">
+            <div class="txt">
+                <p>好长时间之前就计划去养马岛</p>
+                <p>公交上站了两个小时，终于抵达目的地</p>
+                <p>尚在建设的景区</p>
+                <p>不过骑车环岛游是真的爽</p>
+                <p>真想那样带你环游世界</p>
+                <p>但我怕我会累死</p>
+            </div>
+        </div>
+    </li>
+    <li class="l1">
+        <div class="time">2019-07-14</div>
+        <div class="location">泰山</div>
+        <div class="content">
+            <div class="txt">
+                <p>此时，我们携手登上了七千多级的台阶</p>
+                <p>一起见证了泰山的巍峨</p>
+                <p>云端日出的壮观</p>
+                <p>虽然又冷又困</p>
+                <p>但心满意足</p>
+            </div>
+
+        </div>
+    </li>
+    <li class="l2">
+        <div class="time">2019-09-12</div>
+        <div class="location">东海海边</div>
+        <div class="content">
+            <div class="txt">
+                <p>今天，又一次载你来到海边</p>
+                <p>已忘记相伴来此几多次</p>
+                <p>很多，好像又很少</p>
+                <p>与之不同的是</p>
+                <p>这时更美些</p>
+            </div>
+
+        </div>
+    </li>
+    <li class="l3">
+        <div class="time">2019-09-14</div>
+        <div class="location">龙口海港</div>
+        <div class="content">
+            <div class="txt">
+                <p>暑假开学说带你来龙口</p>
+                <p>中秋终于来了</p>
+                <p>你说很凄凉，我说也还好</p>
+                <p>尝试了可怕的毛蛋</p>
+                <p>毛蛋很难吃</p>
+                <p>我们很勇敢</p>
+            </div>
+        </div>
+    </li>
+    <li class="l8">
+        <div class="time">2019-10-02</div>
+        <div class="location">招远</div>
+        <div class="content">
+            <div class="txt">
+                <p>我想先就近旅行，选择了招远</p>
+                <p>计划失误白白走了好久</p>
+                <p>对不起，还对你发脾气</p>
+                <p>又一次的自行车旅游</p>
+                <p>逛了金街、体育馆</p>
+                <p>虽然开始不愉快</p>
+                <p>结局还算美好</p>
+                <p>真的对不起</p>
+            </div>
+        </div>
+    </li>
+    <li class="l9">
+        <div class="time">2019-10-20</div>
+        <div class="location">马拉松</div>
+        <div class="content">
+            <div class="txt">
+                <p>很高兴你能够坚持下来</p>
+                <p>这段时间确实是缺乏锻炼</p>
+                <p>加之听了旁人的话</p>
+                <p>选择了放弃</p>
+                <p>如果有下次</p>
+                <p>我选择自己跑</p>
+                <p>不顾一切坚持下去</p>
+            </div>
+        </div>
+    </li>
+    <li class="l10">
+        <div class="time">2019-10-31</div>
+        <div class="location">东海</div>
+        <div class="content">
+            <div class="txt">
+                <p>真是不好意思</p>
+                <p>又惹你哭了</p>
+                <p>已经记不清惹你哭了几次</p>
+                <p>是我太自私</p>
+                <p>只想着自己</p>
+                <p>对不起</p>
+            </div>
+        </div>
+    </li>
+    <li class="l11">
+        <div class="location">未完待续</div>
+    </li>
+</ul>
+
+</body>
+</html>

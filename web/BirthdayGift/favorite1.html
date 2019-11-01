@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="9,url=favorite2.html">
+    <meta charset="UTF-8">
+    <title>不喜欢</title>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            background-color: lightpink;
+        }
+        @keyframes myH1{
+            0%{opacity: 0%}
+            49%{opacity: 100%}
+            50%{opacity: 0%}
+            100%{opacity: 0%}
+        }
+        @keyframes myImg{
+            0%{opacity: 0%}
+            49%{opacity: 0%}
+            50%{opacity: 100%}
+
+        }
+        #img{
+            width: 100%;
+            height: 100%;
+            animation: myImg 10s 1;
+            float: left;
+        }
+        #text{
+            width: 25px;
+            color: olive;
+            line-height: 30px;
+            margin: 0 auto;
+            font-size: 25px;
+            word-wrap:break-word;
+            word-break: normal;
+            animation: myH1 10s 1;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div id="text">这没啥用，你必须喜欢！！！</div>
+    <div id="img"><img src="like3.gif"></div>
+</div>
+</body>
+</html>
