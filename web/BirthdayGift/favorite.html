@@ -5,14 +5,12 @@
     <title>生日网站/喜欢否</title>
     <script>
         function choice() {
-            if(document.getElementById("like")){
-                location.href="";
-            }
-            else if(document.getElementById("dislike"))
-            {
-                location.href="";
-            }
+            location.href="favorite2.html";
         }
+        function choice1() {
+            location.href="favorite1.html";
+        }
+
     </script>
     <style>
         html{
@@ -67,8 +65,8 @@
     <p>此物最相思。</p>
 </div>
 <div id="bu">
-    <button id="like">我很喜欢</button>
-    <button id="dislike">我不喜欢</button>
+    <button id="like" onclick="choice()">我很喜欢</button>
+    <button id="dislike" onclick="choice1()">我不喜欢</button>
 </div>
 </div>
 </body>
